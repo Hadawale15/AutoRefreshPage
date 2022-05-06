@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+
+   <com.airbnb.lottie.LottieAnimationView
+       android:layout_width="match_parent"
+       android:layout_height="80dp"
+       app:lottie_rawRes="@raw/live_streaming_lottie"
+       android:layout_marginTop="50dp"
+       app:lottie_autoPlay="true"
+       app:lottie_loop="true"
+       android:id="@id/id2"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#151515"
+    android:layout_below="@+id/id2"
+    android:id="@+id/id3">
+
+
+
+
+
+   <ImageView
+       android:layout_width="370dp"
+       android:layout_height="390dp"
+    android:src="@drawable/device"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="20dp"
+
+       android:id="@+id/image_id"/>
+</RelativeLayout>
+
+   <ImageView
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+      android:src="@drawable/refresh_button"
+      android:layout_below="@+id/id3"
+      android:layout_marginTop="20dp"
+      android:layout_centerHorizontal="true"
+      android:id="@+id/refresh_button_id"/>
+</RelativeLayout>
